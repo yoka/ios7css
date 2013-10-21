@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="dist/ios7css.css" type="text/css">
+</head>
+<body>
+  <h3>Input range:</h3>
+
+  <div class="form-item">
+    <label>Volume</label>
+    <input type="range" min="1" max="100" value="20" id="range" onchange="this.style.backgroundImage = '-webkit-gradient(linear, left top, right top, color-stop(' + (this.value - this.min)/(this.max - this.min) + ', #007aff), color-stop(' + (this.value - this.min)/(this.max - this.min) + ', #b8b7b8))'" />
+  </div>
+
+
+</body>
+</html>

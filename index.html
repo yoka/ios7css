@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="dist/ios7css.css" type="text/css">
+  <link rel="stylesheet" href="css/demo.css" type="text/css">
+  <script src="js/angular.min.js"></script>
+  <script src="js/application.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/directives.js"></script>
+</head>
+<body ng-app="app">
+  <div ng-controller="DemoController">
+    <button ng-click="openSource()" id="openSource">Open Source</button>
+    <demo-list demos="demos"></demo-list>
+    <device demo="currentDemo"></device>
+  </div>
+</body>
+</html>
