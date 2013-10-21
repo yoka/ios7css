@@ -45,3 +45,17 @@ html,body {
   margin-left: 53px;
   background-color: #F8F8F8;
 }
+
+@media (max-width: 600px) {
+  #deviceFrame {
+    display: none;
+  }
+  #demoList {
+    width: 100%;
+    position: relative;
+  }
+  body:after {
+    content: 'simplePage';
+    display: none;
+  }
+}

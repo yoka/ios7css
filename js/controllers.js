@@ -20,7 +20,12 @@ angular.module("app").controller("DemoController", [
     };
 
     $scope.$on("selectDemo", function(scope, demoFile){
-      $scope.currentDemo = demoFile;
+      page = window.getComputedStyle(document.body,':after').getPropertyValue('content');
+      if (page === "simplePage") {
+        window.location.href = demoFile;
+      } else {
+        $scope.currentDemo = demoFile;
+      }
     });
   }
 ]);
