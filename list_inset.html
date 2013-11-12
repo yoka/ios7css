@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="dist/font-awesome/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="dist/ios7css.css" type="text/css">
+</head>
+<body>
+  <br>
+  <ul class="list inset small">
+    <li onclick="document.querySelector('.list.small').classList.toggle('toggle')">Click to show toggle</li>
+    <li onclick="this.classList.toggle('toggled')">Toggle this</li>
+    <li>List 1</li>
+    <li>List 2</li>
+    <li>List 3</li>
+    <li>List 4</li>
+  </ul>
+  <br>
+  <ul class="list inset">
+    <li onclick="document.querySelector('.list.inset:not(.small)').classList.toggle('toggle')">Click to show toggle</li>
+    <li onclick="this.classList.toggle('toggled')">Toggle this</li>
+    <li>List 1</li>
+    <li>List 2</li>
+    <li>List 3</li>
+  </ul>
+  <br>
+</body>
+</html>

@@ -3,6 +3,7 @@ angular.module("app").controller("DemoController", [
   function($scope) {
     $scope.demos = [
       "buttons.html",
+      "context_menu.html",
       "dialog_two_buttons.html",
       "dialog_three_buttons.html",
       "input_checkbox.html",
@@ -10,10 +11,12 @@ angular.module("app").controller("DemoController", [
       "input_text.html",
       "label_widths.html",
       "list.html",
+      "list_inset.html",
       "list_with_chevron.html",
+      "list_with_left_toggle.html",
       "textarea.html"
     ];
-    $scope.currentDemo = $scope.demos[0]; //"buttons.html";
+    $scope.currentDemo = "list_inset.html"; //$scope.demos[0]; //"buttons.html";
 
     $scope.openSource = function(){
       window.open("view-source:"+document.querySelector("iframe").src);

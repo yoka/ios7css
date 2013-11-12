@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, user-scalable=false;">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="stylesheet" href="dist/ios7css.css" type="text/css">
 </head>
 <body>
   <h3>Input range:</h3>
 
+  <!-- javascript is required to get proper functionality to slider -->
   <div class="form-item">
-    <label>Volume</label>
-    <input type="range" min="1" max="100" value="20" id="range" onchange="this.style.backgroundImage = '-webkit-gradient(linear, left top, right top, color-stop(' + (this.value - this.min)/(this.max - this.min) + ', #007aff), color-stop(' + (this.value - this.min)/(this.max - this.min) + ', #b8b7b8))'" />
+    <label for="a">Volume</label>
+    <input type="range" min="1" max="100" value="20" id="a" onchange="this.style.backgroundImage = '-webkit-gradient(linear, left top, right top, color-stop(' + (this.value - this.min)/(this.max - this.min) + ', #007aff), color-stop(' + (this.value - this.min)/(this.max - this.min) + ', #b8b7b8))'" /><script>document.querySelector("#a").onchange();</script>
+  </div>
+
+  <!-- javascript is required to get proper functionality to slider -->
+  <div class="form-item">
+    <label for="b">Show value</label>
+    <input class="show-value" type="range" min="1" max="100" value="20" id="b" onchange="this.setAttribute('value', this.value);this.style.backgroundImage = '-webkit-gradient(linear, left top, right top, color-stop(' + (this.value - this.min)/(this.max - this.min) + ', #007aff), color-stop(' + (this.value - this.min)/(this.max - this.min) + ', #b8b7b8))'" /><script>document.querySelector("#b").onchange();</script>
   </div>
 
 
