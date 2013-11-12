@@ -16,7 +16,7 @@ angular.module("app").controller("DemoController", [
       "list_with_left_toggle.html",
       "textarea.html"
     ];
-    $scope.currentDemo = "list_inset.html"; //$scope.demos[0]; //"buttons.html";
+    $scope.currentDemo = $scope.demos[0];
 
     $scope.openSource = function(){
       window.open("view-source:"+document.querySelector("iframe").src);
